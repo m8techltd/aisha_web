@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" >  
+    <title>Restaurant Website</title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+  </head>
+  <body>
+    <div class="main">
+        <!-- Header -->
+        <div id="header">
+          <div class="site-id">
+            <img src="img/buka-logo.svg"/>
+          </div>
+          <div class="pry-nav">
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+              </ul>
+          </div>
+
+          <!-- search box -->
+          <div class="search-box">
+            
+            <!-- search-box -->
+            <!-- <form action="search" method="GET">
+              <input type="text" name="search"  />
+            </form> -->
+            
+            <div class="search-icon" onclick="toggleSearch">
+              <img src="img/search-icon.svg"/>
+            </div>
+          </div>
+
+          <!-- cart -->
+          <div class="cart">
+            <img src="img/cart-icon.svg"/>
+          </div>
+          <button class="signup">
+            Sign up
+         </button>
+        </div>
+
+        <!-- landing page -->
+      <div class="landing-page">
+          <div class="landing-text">
+            <h1>Delicious Food</h1>
+            <p>Prepared specially for your delight, order food and have it delivered to your location at any time Food just got better at one click away</p>
+            <a href="menu.html"><button>Order Now</button></a>
+          </div>
+          <div class="landing-img">
+            <img src="img/landing-image.png"/>
+          </div>
+      </div>
+
+      <!-- our style -->
+      <div class="our-style">
+          <div class="fast">
+            <div class="icon-box">
+              <img src="img/fast-icon.svg">
+            </div>
+            <h2>Fast</h2>
+          </div>
+          <div class="anywhere">
+            <img src="img/gis-icon.svg">
+            <h2>Anywhere</h2>
+          </div>
+          <div class="rsvp">
+            <img src="img/rsvp-icon.svg">
+            <h2>RSVP</h2>
+          </div>
+      </div>
+
+      <!-- categories -->
+      <div class="categories">
+        <div class="categories-head">
+          <h1>Categories</h1>
+        </div>
+          <div class="categories-container">
+            <div class="categories-item1">
+              <img src="img/food-illustration.svg"/>
+            </div>
+            <div class="categories-item2">
+              <img src="img/coke-illustration.svg"/>
+            </div>
+            <div class="categories-item3">
+              <img src="img/beer-illustration.svg"/>
+            </div>
+            <div class="categories-item4">
+              <img src="img/chops-illustration.svg"/>
+            </div>
+          </div>
+      </div>
+
+
+      <!-- our story -->
+      <div class="story">
+        <div class="our-story">
+          <h1>Special Dishes</h1>
+        </div>
+        <div class="story-text">
+          <p>Driven by the passion to cook and share good food to satisfy our customers, we have integrated technology into our services to bring food seamlessly to your doorstep</p>
+        </div>
+      </div> 
+      
+      <!-- delicacies -->
+      <div class="delicacies">
+
+        <!-- <div class="del-heading">
+          <h1>Our Special Menu</h1>
+        </div> -->
+
+            <!-- food-container -->
+          <div class="food-container">
+
+              <!-- food box -->
+              <div class="food-box">
+                <div class="food-image">
+                  <img src="img/sweetbread.jpg"/>
+                </div>
+                <!-- food meta -->
+                <div class="food-meta">
+                  <div class="name-price">
+                      <p>Rice and Stew</p>
+                      <h4>2000</h4>
+                  </div>
+                  <div class="spoon">
+                      <div class="spoon-box-minus">
+                          <img src="img/minusicon.svg" alt="">
+                      </div>
+                      <div class="spoon-box-qty">
+                        <p>1</p>   
+                      </div>
+                      <div class="spoon-box-plus" onclick="addItem()">
+                          <img src="img/plusicon.svg" alt="">
+                      </div>
+                  </div>
+                  <button>Order</button>
+                </div>
+              </div>
+
+                <!-- food box -->
+                <div class="food-box">
+                  <div class="food-image">
+                    <img src="img/sweetbread.jpg"/>
+                  </div>
+                  <!-- food meta -->
+                  <div class="food-meta">
+                    <div class="name-price">
+                        <p>Rice and Stew</p>
+                        <h4>#2000</h4>
+                    </div>
+                    <div class="spoon">
+                        <div class="spoon-box-plus">
+                            <img src="img/minusicon.svg" alt="">
+                        </div>
+                        <div class="spoon-box-qty">   
+                        </div>
+                        <div class="spoon-box-minus">
+                            <img src="img/plusicon.svg" alt="">
+                        </div>
+                    </div>
+                    <button>Order</button>
+                  </div>
+                  </div>
+
+                 <!-- food box -->
+                 <div class="food-box">
+                    <div class="food-image">
+                      <img src="img/sweetbread.jpg"/>
+                    </div>
+                    <!-- food meta -->
+                    <div class="food-meta">
+                      <div class="name-price">
+                          <p>Rice and Stew</p>
+                          <h4>#2000</h4>
+                      </div>
+                      <div class="spoon">
+                          <div class="spoon-box-plus">
+                              <img src="img/minusicon.svg" alt="">
+                          </div>
+                          <div class="spoon-box-qty">   
+                          </div>
+                          <div class="spoon-box-minus">
+                              <img src="img/plusicon.svg" alt="">
+                          </div>
+                      </div>
+                      <button>Order</button>
+                    </div>
+                 </div>
+
+                 <!-- food box -->
+                 <div class="food-box">
+                  <div class="food-image">
+                    <img src="img/sweetbread.jpg"/>
+                  </div>
+                  <!-- food meta -->
+                  <div class="food-meta">
+                    <div class="name-price">
+                        <p>Rice and Stew</p>
+                        <h4>#2000</h4>
+                    </div>
+                    <div class="spoon">
+                        <div class="spoon-box-plus">
+                            <img src="img/minusicon.svg" alt="">
+                        </div>
+                        <div class="spoon-box-qty">   
+                        </div>
+                        <div class="spoon-box-minus">
+                            <img src="img/plusicon.svg" alt="">
+                        </div>
+                    </div>
+                    <button>Order</button>
+                  </div>
+                </div>
+            </div>
+          </div>
+      <!-- </div> -->
+
+      <!-- reservation -->
+      <div class="reserve">
+
+        <!-- <div class="rsvp-head">
+          <h1>Reservations</h1>
+        </div> -->
+        <div class="rsvp-img">
+          <div class="rsvp-img-up">
+            <div class="rsvp-img-up-left">  
+              <img src="img/cakes.jpg" alt="">
+            </div>
+            <div class="rsvp-img-up-right">  
+              <img src="img/egg food.jpg" alt="">
+            </div>
+          </div>
+          <div class="rsvp-img-down">
+            <img src="img/smoothie.jpg" alt="">
+          </div>
+
+        </div>
+
+        <div class="reserve-right">
+          <div class="reserve-right-left">
+            <div class="reserve-right-left-up">
+              <img src="img/meat-shreds.jpg" alt="">
+            </div>
+            <div class="reserve-right-left-down">
+              <img src="img/chops.jpg" alt="">
+            </div>
+          </div>
+          <div class="reserve-right-right">
+            <img src="img/suya.jpg" alt="">
+          </div>
+        </div>
+        
+      </div>
+
+      <!-- footer -->
+      <div class="footer">
+        <!-- footer right -->
+        <div class=footer-right>
+
+          <div class="nav-id">
+            <img src="img/buka-logo.svg"/>
+          </div>
+
+          <div class="text-box">
+            <p>Stay up to date with our best deals, discounts events, awuf, and lots more, connect with us on our social platforms</p>
+          </div>
+
+          <!-- copyright -->
+          <div class="ip">
+            <p>Developed by Motiv8</p>
+            <p>Terms of Service | Privacy Policy</p>
+          </div>
+
+          <!-- Social media Icons -->
+          <!-- <div class="social-media">
+                <div class="social-icons">
+                    <img src="img/twitter-icon.svg"/>
+                </div>
+                <div  class="social-icons">
+                    <img src="img/fb-icon.svg"/>
+                </div>
+                <div class="social-icons">
+                  <img src="img/whatsapp-icon.svg"/>
+              </div>
+              <div  class="social-icons">
+                  <img src="img/insta-icon.svg"/>
+              </div>
+        </div> -->
+
+        </div>
+    
+        <div class="links">
+          <!-- link -->
+          <ul>
+            <li>Links</li>
+            <li>Home</li>
+            <li>Menu</li>
+            <li>Pricing</li>
+            <li>About</li>
+          </ul>
+        </div>
+
+        <div class="links">
+          <!-- link -->
+          <ul>
+            <li>Categories</li>
+            <li>Food</li>
+            <li>Soft Drinks</li>
+            <li>Alcohol</li>
+            <li>Chops</li>
+          </ul>
+        </div>
+
+        <!-- contact -->
+        <div class="contact">
+          <ul>
+            <li>Contact</li>
+            <li>+2347000668684</li>
+            <li>hello@buka.com</li>
+          </ul>
+          <!-- Social media Icons -->
+          <div class="social-media">
+            <div class="social-icons">
+                <img src="img/twitter-icon.svg"/>
+            </div>
+            <div  class="social-icons">
+                <img src="img/fb-icon.svg"/>
+            </div>
+            <div class="social-icons">
+              <img src="img/whatsapp-icon.svg"/>
+          </div>
+          <div  class="social-icons">
+              <img src="img/insta-icon.svg"/>
+          </div>
+    </div>
+        </div> 
+         
+    </div>
+
+  </body>
+  <script language="javascript" src="addToCart.js"></script>
+  <script language="javascript" src="js/search.js"></script>
+</html>
